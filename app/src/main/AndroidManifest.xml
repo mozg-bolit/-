@@ -18,6 +18,15 @@
         android:theme="@style/Theme.Apteka"
         tools:targetApi="31">
         <activity
+            android:name=".ShowZakazyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShowOtgruzkiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShowTovaryActivity"
+            android:exported="false" />
+        <activity
             android:name=".Made_otgruz"
             android:exported="false" />
         <activity

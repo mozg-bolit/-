@@ -79,4 +79,25 @@
         app:layout_constraintEnd_toEndOf="@+id/Odate"
         app:layout_constraintStart_toStartOf="@+id/Odate"
         app:layout_constraintTop_toBottomOf="@+id/Odate" />
+
+    <Button
+        android:id="@+id/pokO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Просмотр"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OB" />
+
+    <Button
+        android:id="@+id/deleteO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        app:layout_constraintBottom_toTopOf="@+id/pokO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OB" />
 </androidx.constraintlayout.widget.ConstraintLayout>

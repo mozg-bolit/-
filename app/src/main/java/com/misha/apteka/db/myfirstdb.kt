@@ -5,6 +5,8 @@ import android.provider.BaseColumns
 object myfirstdb: BaseColumns {
     const val TABLE_NAME = "Отчет"
     const val COLUMN_NAME_TITLE = "title"
+    const val COLUMN_NAME_TITLE2 = "2"
+    const val COLUMN_NAME_TITLE3 = "3"
     const val COLUMN_NAME_CONTENT = "subtitle"
 
     const val DATABASE_NAME = "Autontificetion"

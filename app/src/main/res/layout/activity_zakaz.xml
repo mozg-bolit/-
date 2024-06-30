@@ -14,7 +14,7 @@
         android:layout_marginStart="124dp"
         android:layout_marginTop="75dp"
         android:layout_marginEnd="124dp"
-        android:layout_marginBottom="49dp"
+        android:layout_marginBottom="8dp"
         android:text="Сделать заказ"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/NaimZ"
@@ -133,10 +133,45 @@
         android:id="@+id/Add_Zback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="20dp"
         android:text="Добавить"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pokZ"
+        app:layout_constraintHorizontal_bias="0.228"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KodTZ" />
+
+    <EditText
+        android:id="@+id/KodTZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Код товара"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/DateZ"
+        app:layout_constraintStart_toStartOf="@+id/DateZ"
         app:layout_constraintTop_toBottomOf="@+id/DateZ" />
+
+    <Button
+        android:id="@+id/pokZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="Просмотр"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KodTZ" />
+
+    <Button
+        android:id="@+id/deleteZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="DEL"
+        app:layout_constraintEnd_toStartOf="@+id/pokZ"
+        app:layout_constraintStart_toEndOf="@+id/Add_Zback"
+        app:layout_constraintTop_toBottomOf="@+id/KodTZ" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
