@@ -1,0 +1,25 @@
+    CREATE TABLE Товары (
+        КодТовара INT PRIMARY KEY,
+        НаименованиеТовара VARCHAR(255),
+        ЦенаТовара DOUBLE
+    );
+
+    CREATE TABLE Заказы (
+        КодЗаказа INT PRIMARY KEY,
+        НаименованиеЗаказчика VARCHAR(255),
+        АдресЗаказчика VARCHAR(255),
+        Телефон VARCHAR(20),
+        НомерДоговора INT,
+        ДатаЗаключениеДоговора DATE,
+        КодТовара INT,
+        ПлановаяПоставка INT,
+        FOREIGN KEY (КодТовара) REFERENCES Товары(КодТовара)
+    );
+
+    CREATE TABLE Отгрузки (
+        КодОтгрузки INT PRIMARY KEY,
+        КодЗаказа INT,
+        ДатаОтгрузки DATE,
+        ОтгруженоТовара INT,
+        FOREIGN KEY (КодЗаказа) REFERENCES Заказы(КодЗаказа)
+    );

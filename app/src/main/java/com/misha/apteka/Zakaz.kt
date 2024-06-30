@@ -27,10 +27,5 @@ class Zakaz : AppCompatActivity() {
         val NumDZ: EditText = findViewById(R.id.NumDZ)
         val DateZ: EditText = findViewById(R.id.DateZ)
         val planpostZ = PlanpostZ.text.toString()
-        f = if (planpostZ.isNotEmpty() && planpostZ.all { it.isDigit() }) {
-            planpostZ.toInt()
-        } else {
-            0
-        }
     }
 }
