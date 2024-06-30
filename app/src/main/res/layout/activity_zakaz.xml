@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Zakaz">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="49dp"
+        android:text="Сделать заказ"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/NaimZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/KodZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Код заказа"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/PlanpostZ"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="@+id/PlanpostZ"
+        app:layout_constraintTop_toBottomOf="@+id/PlanpostZ" />
+
+    <EditText
+        android:id="@+id/NaimZZ"
+        android:layout_width="238dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Наименование заказчика"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/KodZ"
+        app:layout_constraintStart_toStartOf="@+id/KodZ"
+        app:layout_constraintTop_toBottomOf="@+id/KodZ" />
+
+    <EditText
+        android:id="@+id/AdresZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Адрес заказчика"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/NaimZZ"
+        app:layout_constraintStart_toStartOf="@+id/NaimZZ"
+        app:layout_constraintTop_toBottomOf="@+id/NaimZZ" />
+
+    <EditText
+        android:id="@+id/NumZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Номер заказчика"
+        android:inputType="phone"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/AdresZ"
+        app:layout_constraintStart_toStartOf="@+id/AdresZ"
+        app:layout_constraintTop_toBottomOf="@+id/AdresZ" />
+
+    <EditText
+        android:id="@+id/NumDZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Номер договора"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/NumZ"
+        app:layout_constraintStart_toStartOf="@+id/NumZ"
+        app:layout_constraintTop_toBottomOf="@+id/NumZ" />
+
+    <EditText
+        android:id="@+id/DateZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Дата заключения договора"
+        android:inputType="date"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/NumDZ"
+        app:layout_constraintStart_toStartOf="@+id/NumDZ"
+        app:layout_constraintTop_toBottomOf="@+id/NumDZ" />
+
+    <EditText
+        android:id="@+id/NaimZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Наименование товара"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@+id/PlanpostZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/PlanpostZ"
+        android:layout_width="229dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Плановая поставка (шт.)"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/NaimZ"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/NaimZ"
+        app:layout_constraintTop_toBottomOf="@+id/NaimZ" />
+
+    <Button
+        android:id="@+id/Add_Zback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Добавить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateZ" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
